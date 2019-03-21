@@ -1,0 +1,21 @@
+<h2 class="text-center">Add location</h2>
+<form>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="name" [(ngModel)]="location.name" placeholder="Name" name="name" class="form-control" id="name">
+  </div>
+
+  <div class="form-group">
+    <label for="latitude">Latitude:</label>
+    <input type="number" [(ngModel)]="location.latitude" placeholder="Latitude" name="latitude" class="form-control"
+           id="latitude">
+  </div>
+
+  <div class="form-group">
+    <label for="longitude">Longitude:</label>
+    <input type="number" [(ngModel)]="location.longitude" placeholder="Longitude" name="longitude"
+           class="form-control" id="longitude">
+  </div>
+
+  <button class="btn btn-success" (click)="createLocation()">Create</button>
+</form>

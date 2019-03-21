@@ -1,0 +1,16 @@
+<h2 class="text-center">Find location</h2>
+<div class="form-group">
+  <label for="latitudeToFind">Latitude to find:</label>
+  <input type="number" [(ngModel)]="latitudeToFind" placeholder="Latitude to find" name="latitudeToFind" class="form-control" id="latitudeToFind">
+</div>
+
+<div class="form-group">
+  <label for="longitudeToFind">Longitude to find:</label>
+  <input type="number" [(ngModel)]="longitudeToFind" placeholder="Longitude to find" name="longitudeToFind" class="form-control" id="longitudeToFind">
+</div>
+
+<button class="btn btn-success" (click)="find()">Find</button>
+
+<div class="form-group" *ngIf="name">
+  The nearest location is {{name}}
+</div>
